@@ -1,85 +1,9 @@
-Insurance Cost Prediction (Linear Regression)
-Project Description
+## Insurance Cost Prediction using Linear Regression
 
-This project predicts medical insurance charges using a Linear Regression model.
-It is a beginner machine learning project designed to understand the basic supervised learning pipeline.
+This project focuses on predicting medical insurance charges using a basic machine learning model. The goal of the project is to understand the complete supervised learning pipeline, including data loading, preprocessing, model training, and evaluation. The dataset contains information such as age, sex, body mass index (BMI), number of children, smoking status, region, and the corresponding insurance charges. These features are used to train a Linear Regression model that estimates the cost of insurance for an individual.
 
-Objective
+The project begins with loading and exploring the dataset to understand the structure, data types, and relationships between variables. Categorical features such as sex, smoker, and region are converted into numerical form using one-hot encoding. The data is then split into training and testing sets to evaluate how well the model performs on unseen data. A Linear Regression model is trained on the training set, and its performance is measured using evaluation metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and the R² score.
 
-To predict insurance charges based on:
+To improve the model’s performance, a log transformation is applied to the target variable, which helps reduce the effect of extreme values and produces more stable predictions. The final model achieves an R² score of approximately 0.80, meaning it explains around 80% of the variation in insurance charges. One of the main insights from the model is that smoking status has the most significant impact on insurance costs.
 
-Age
-
-Gender
-
-BMI
-
-Number of children
-
-Smoking status
-
-Region
-
-Dataset
-
-The dataset contains 1338 records with the following features:
-
-Feature	Description
-age	Age of the person
-sex	Male or female
-bmi	Body mass index
-children	Number of dependents
-smoker	Smoker or non-smoker
-region	Residential area
-charges	Insurance cost (target)
-Steps Performed
-
-Loaded and inspected the dataset
-
-Explored data distributions and correlations
-
-Encoded categorical variables using one-hot encoding
-
-Split data into training and testing sets
-
-Trained a Linear Regression model
-
-Evaluated the model using MAE, RMSE, and R²
-
-Improved performance using log transformation
-
-Model Performance
-
-MAE: 0.27 (log scale)
-
-RMSE: 0.42 (log scale)
-
-R² Score: 0.80
-
-The model explains about 80% of the variation in insurance charges.
-
-Key Insight
-
-Smoking status has the largest impact on insurance costs.
-
-Tools Used
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Scikit-learn
-
-What I Learned
-
-How to prepare data for machine learning
-
-How to train a regression model
-
-How to evaluate model performance
-
-How feature transformations affect results
+This project demonstrates the fundamental steps involved in building a regression model and provides a strong foundation for more advanced machine learning tasks. It highlights the importance of data preprocessing, proper evaluation, and simple model improvements in achieving better predictive performance.
